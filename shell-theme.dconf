@@ -1,0 +1,12 @@
+[/]
+foreground-color='rgb(255,171,54)'
+visible-name='Main'
+palette=['rgb(45,45,45)', 'rgb(204,0,0)', 'rgb(0,238,187)', 'rgb(196,160,0)', 'rgb(207,78,255)', 'rgb(255,87,87)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(0,220,192)', 'rgb(114,159,207)', 'rgb(252,109,255)', 'rgb(116,116,116)', 'rgb(255,255,69)']
+bold-is-bright=false
+cursor-shape='ibeam'
+use-transparent-background=true
+use-theme-colors=false
+use-theme-transparency=false
+bold-color-same-as-fg=true
+background-color='rgb(37,37,37)'
+background-transparency-percent=5
