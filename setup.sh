@@ -21,12 +21,10 @@ do
 	sudo apt-get install $prog
 	installation_message
 done < "$pkg_file"
-exit
 
 #Install oh-my-zsh
 prog="oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-installation_message
 
 #Setup shell
 cp -f ./.bashrc ~/.bashrc
