@@ -14,20 +14,14 @@ installation_message(){
 
 }
 
-#Install python3.7
-prog="Python3.7"
-sudo apt-get install python3.7
-installation_message
+pkg_file="./pkg.list"
 
-#Install python2
-prog="Python2.7"
-sudo apt-get install python
-installation_message
-
-#Install zsh
-prog="Zsh"
-sudo apt-get install zsh
-installation_message
+while read -r prog
+do
+	sudo apt-get install $prog
+	installation_message
+done < "$pkg_file"
+exit
 
 #Install oh-my-zsh
 prog="oh-my-zsh"
