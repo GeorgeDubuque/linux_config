@@ -18,7 +18,7 @@ pkg_file="./pkg.list"
 
 while read -r prog
 do
-	sudo apt-get install $prog
+	sudo apt-get -y install $prog
 	installation_message
 done < "$pkg_file"
 
@@ -31,7 +31,7 @@ cp -f ./.zshrc ~/.zshrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp -f ./.vimrc ~/.vimrc
 vim +PluginInstall +qall
-usermod --shell /bin/zsh $USER
+sudo usermod --shell /bin/zsh $USER
 
 #Load shell profile
 dconf load /org/gnome/terminal/legacy/profiles:/:1430663d-083b-4737-a7f5-8378cc8226d1/ < ./shell-theme.dconf
